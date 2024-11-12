@@ -1,0 +1,27 @@
+#thpt_APL{
+    margin: 150px 250px;
+    line-height: 1.5;
+}
+h1{
+    text-align: center;
+}
+.title{
+    font-size: 18px;
+    text-align: center;
+}
+.imageAPL1{
+    margin-left: 10%;
+}
+.imageAPL2{
+    margin-left: 5%;
+}
+.imageAPL3{
+    margin-left: 12%;
+}
+.imageAPL4{
+    margin-left: 3%;
+}
+
+p{
+    font-size: 20px;
+}
