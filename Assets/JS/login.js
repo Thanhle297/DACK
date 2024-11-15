@@ -4,18 +4,22 @@ const click_register = document.querySelector('.register');
 const wrapper_login = document.querySelector('.wrapper_login');
 const wrapper_register = document.querySelector('.wrapper_register');
 
-click_register.addEventListener('click', () => { // ():call back sử dụng around funtion
+// khởi tạo sự kiện cho ô đăng ký
+click_register.addEventListener('click', () => { // ():call back sử dụng around funtion 
     block.classList.add('active');
     wrapper_login.classList.add('close')
     wrapper_register.classList.remove('close')
 
 });
+
+// khởi tạo sự kiện cho ô đăng nhập
 click_login.addEventListener('click', () => {
     block.classList.remove('active');
     wrapper_login.classList.remove('close')
     wrapper_register.classList.add('close')
 });
 
+// thiết lập tài khoản admin liên kết localStorage
 var admin = {
     username: 'admin1',
     password: '1'
@@ -23,6 +27,7 @@ var admin = {
 var adminData = JSON.stringify(admin);
 localStorage.setItem('admin1', adminData);
 
+// thiết lập sự kiện đăng ký tài khoản 
 document.getElementById('register-box').addEventListener('submit', function (event) {
     event.preventDefault();
     let usernameElm = document.querySelector('#us-register').value;
@@ -48,9 +53,9 @@ document.getElementById('register-box').addEventListener('submit', function (eve
     let userData = JSON.stringify(user);
     localStorage.setItem(usernameElm, userData)
 
-    let countAcc = Number(localStorage.getItem('accountNumber'))
-    countAcc += 1
-    localStorage.setItem('accountNumber', countAcc)
+    // let countAcc = Number(localStorage.getItem('accountNumber'))
+    // countAcc += 1
+    // localStorage.setItem('accountNumber', countAcc)
 
     alert('Register success!')
     window.location.href = "login.html";

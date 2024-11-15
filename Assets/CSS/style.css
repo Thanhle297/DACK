@@ -98,10 +98,10 @@ main {
  }
 #container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 2em; /* Khoảng cách giữa các thẻ */
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
@@ -109,7 +109,7 @@ main {
 
 .card {
   background-color: #ffffff;
-  max-width: 18em;
+  width: 16em;
   margin: 1em;
   padding: 10px;
   border-radius: 20px;
@@ -157,7 +157,7 @@ main {
 
 .container h5 {
   display: -webkit-box;
-  -webkit-line-clamp: 2; 
+  -webkit-line-clamp: 1; 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -177,10 +177,10 @@ main {
 }
 
 .prev {
-  left: 20px;
+  left: 10%;
 }
 .next {
-  right: 0;
+  right: 10%;
 }
 
 #leaf {
@@ -194,9 +194,10 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 2em;
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .cardNew {
@@ -348,10 +349,10 @@ main {
 }
 
 .btn-left-member {
-  left: 150px;
+  left: 5%;
 }
 .btn-right-member {
-  right: 80px;
+  right: 0;
 }
 
 /* ảnh banner */
