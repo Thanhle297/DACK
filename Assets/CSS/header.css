@@ -78,5 +78,8 @@
   font-size: 20px;
   color: white;
 }
-
+/* ẩn hiện quản lý theo tài khoản */
+.hidden{
+  display: none;
+}
 

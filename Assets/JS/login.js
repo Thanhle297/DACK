@@ -22,7 +22,8 @@ click_login.addEventListener('click', () => {
 // thiết lập tài khoản admin liên kết localStorage
 var admin = {
     username: 'admin1',
-    password: '1'
+    password: '1',
+    role:'admin'
 }
 var adminData = JSON.stringify(admin);
 localStorage.setItem('admin1', adminData);
@@ -48,6 +49,7 @@ document.getElementById('register-box').addEventListener('submit', function (eve
     user = {
         username: usernameElm,
         password: passwordElm,
+        role: 'user'
     }
 
     let userData = JSON.stringify(user);
@@ -78,13 +80,19 @@ document.getElementById('login-box').addEventListener('submit', function (event)
         return;
     }
 
-    if (userData.username == 'admin1'){
-        localStorage.setItem('IsAdmin', 'true')
-    }
-    else{
-        localStorage.setItem('IsAdmin', 'false')
-    }
+    // if (userData.username == 'admin1'){
+    //     localStorage.setItem('IsAdmin', 'true')
+    // }
+    // else{
+    //     localStorage.setItem('IsAdmin', 'false')
+    // }
+    localStorage.setItem('IsAdmin',userData.role ==='admin')
     localStorage.setItem('IsLogin', 'true')
-    localStorage.setItem('currentUser', userData.username)    
+    localStorage.setItem('currentUser', userData.username) 
+    
+    if(userData.role ==='admin'){
+        alert('Welcome,admin!');
+    }
+    
     window.location.href = "index.html";
 })

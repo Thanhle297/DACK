@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trường THPT A Phủ Lý</title>
-    <!-- link favicon -->
     <link
       rel="shortcut icon"
-      href="./ico/favicon-16x16.png"
+      href="ico/favicon-32x32.png"
       type="image/x-icon"
     />
     <!-- linl css -->
     <link rel="stylesheet" href="./Assets/CSS/all.css" />
     <link rel="stylesheet" href="./Assets/CSS/header.css" />
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <link rel="stylesheet" href="./Assets/CSS/admin.css">
     <!-- link icon fone-awesome -->
     <link
       rel="stylesheet"
@@ -24,21 +23,14 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
-    <!-- link font chữ -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
+    <title>Danh sách tài khoản</title>
+    
   </head>
   <body>
     <header>
       <div id="global-header">
         <div class="logo">
-          <img
-            src="./logo.png"
-            alt=""
-            width="80px"
-            height="80px"
-          />
+          <img src="./logo.png" alt="" width="80px" height="80px" />
         </div>
         <ul class="navbar">
           <li class="item"><a href="./index.html">TRANG CHỦ</a></li>
@@ -73,95 +65,45 @@
           </li>
           <li class="item"><a href="./news.html">TIN TỨC</a></li>
           <li class="item"><a href="./contact.html">LIÊN HỆ</a></li>
-          <li class="item hidden" id="Manager"><a href="./admin.html">QUẢN LÝ</a></li>
+          <li class="item hidden" id="Manager">
+            <a href="./admin.html">QUẢN LÝ</a>
+          </li>
           <li class="item">
-            <a href="./login.html"><i id="btn-login" class="fa-sharp fa-solid fa-right-to-bracket" onclick="dangnhap()"></i></a>
-            <i id="btn-logout" class="fa-solid fa-right-from-bracket" onclick="dangxuat()"></i>
+            <a href="./login.html"
+              ><i
+                id="btn-login"
+                class="fa-sharp fa-solid fa-right-to-bracket"
+                onclick="dangnhap()"
+              ></i
+            ></a>
+            <i
+              id="btn-logout"
+              class="fa-solid fa-right-from-bracket"
+              onclick="dangxuat()"
+            ></i>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <div class="banner">
-        <div class="img-list">
-          <img class="img-banner" src="./img/banner.jpg" alt="" width="100%" />
-          <img class="img-banner" src="./img/banner2.jpg" alt="" width="100%" />
-          <img class="img-banner" src="./img/banner3.jpg" alt="" width="100%" />
-          <img class="img-banner" src="./img/banner4.jpg" alt="" width="100%" />
-        </div>
-        <div class="btns">
-          <div class="btn-left btn"><i class="bx bx-chevron-left"></i></div>
-          <div class="btn-right btn"><i class="bx bx-chevron-right"></i></div>
-        </div>
-        <div class="index-images">
-          <div class="index-item index-item-0 active"></div>
-          <div class="index-item index-item-1"></div>
-          <div class="index-item index-item-2"></div>
-          <div class="index-item index-item-3"></div>
-        </div>
-      </div>
-      <div class="glb-search">
-        <div class="search">
-          <input type="text" id="btn-search" placeholder="Tìm kiếm..." />
-          <i id="ico-search" class="fa-solid fa-magnifying-glass"></i>
-        </div>
-      </div>
-      <div class="global-intro" id="global-intro">
-        <i class="fa-solid fa-feather-"></i>
-        <i id="leaf" class="fa-sharp-duotone fa-solid fa-clover fa-2xl"></i>
-        <h2>Giới thiệu</h2>
-        <hr />
-        <span>Trường THPT A Phủ Lý với tuổi đời trên 20 năm </span>
-        <p>&nbsp;</p>
-        <div class="video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/2rwYSpUdlWg?si=IcXLScMkJAVVO9d0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="global-new">
-        <i id="bell" class="fa-duotone fa-solid fa-bell fa-lg"></i>
-        <a href="./news.html"><h3>TIN TỨC & SỰ KIỆN</h3></a>
-        <hr />
-      </div>
-      <div class="slide-container">
-        <div id="container">
-          <div class="change-slide">
-            <div class="prev btn-slide"><i class="bx bx-chevron-left"></i></div>
-            <div class="next btn-slide">
-              <i class="bx bx-chevron-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="news"></div>
-      <div class="member">
-        <p><i class="fa-solid fa-book-open"></i></p>
-        <h3>CÁN BỘ GIÁO VIÊN</h3>
-        <hr />
-        <div id="member">
-          <div class="btn-member">
-            <div class="btn-left-member btn-m">
-              <i class="bx bx-chevron-left"></i>
-            </div>
-            <div class="btn-right-member btn-m">
-              <i class="bx bx-chevron-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="other">
-        <a class="btn-other" href="./login.html">Xem thêm</a>
-      </div>
+      <h1>Danh sách tài khoản</h1>
+      <table id="accountsTable">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dữ liệu tài khoản sẽ được thêm tại đây -->
+        </tbody>
+      </table>
     </main>
-    <!-- chân trang -->
+
     <footer>
       <div class="footer-container">
         <div class="footer-section" id="section">
@@ -234,12 +176,8 @@
         725102086 & Đoàn Thị Hoài Thương - 725102089
       </div>
     </footer>
-    <!-- link js -->
-    <script src="./Assets/JS/banner.js"></script>
-    <script src="./Assets/JS/data.js"></script>
-    <script src="./Assets/JS/app.js"></script>
-    <script src="./Assets/JS/datanew.js"></script>
-    <script src="./Assets/JS/member.js"></script>
+
+    <script src="./Assets/JS/manager.js"></script>
     <script src="./Assets/JS/common.js"></script>
     <script src="./Assets/JS/admin.js"></script>
   </body>
