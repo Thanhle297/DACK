@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liên hệ</title>
-    <link
-      rel="shortcut icon"
-      href="./ico/favicon-16x16.png"
-      type="image/x-icon"
-    />
+    <title>Thêm bài viết mới</title>
+    <link rel="shortcut icon" href="./ico/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Assets/CSS/all.css">
+    <link rel="stylesheet" href="./Assets/CSS/header.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <!-- link icon fone-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./Assets/CSS/all.css" />
-    <link rel="stylesheet" href="./Assets/CSS/header.css" />
-    <link rel="stylesheet" href="./Assets/CSS/contact.css" />
-    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <!-- link icon boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <style>
+      form {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+      }
+      button {
+        margin-top: 15px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -57,6 +85,9 @@
           </li>
           <li class="item"><a href="./news.html">TIN TỨC</a></li>
           <li class="item"><a href="./contact.html">LIÊN HỆ</a></li>
+          <li class="item hidden" id="Manager">
+            <a href="./admin.html">QUẢN LÝ</a>
+          </li>
           <li class="item">
             <a href="./login.html"
               ><i
@@ -74,44 +105,29 @@
         </ul>
       </div>
     </header>
-    <div class="main">
-      <h2>About us</h2>
-      <div class="box_main">
-        <div class="admin">
-          <div class="img_admin">
-            <img
-              src="./img/admin.jpg"
-              alt="Admin Thành"
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <div class="text">
-            <p>Lê Quang Thành</p>
-            <p>MSV: 725102086</p>
-            <p>Lớp: K72A2</p>
-            <p>Khoa: Công nghệ thông tin</p>
-          </div>
-        </div>
-        <div class="admin">
-          <div class="img_admin">
-            <img
-              src="./img/Admin_Thương.jpg"
-              alt="Admin Thương"
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <div class="text">
-            <p>Đoàn Thị Hoài Thương</p>
-            <p>MSV: 725102089</p>
-            <p>Lớp: K72A2</p>
-            <p>Khoa: Công nghệ thông tin</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- chân trang -->
+    <main>
+        <h1 style="text-align: center">Thêm tin tức mới</h1>
+        <form id="newsForm">
+          <label for="title">Tiêu đề:</label>
+          <input type="text" id="title" name="title" required />
+    
+          <label for="description">Nội dung:</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            required
+          ></textarea>
+    
+          <label for="date">Ngày/Tháng/Năm:</label>
+          <input type="date" id="date" name="date" required />
+    
+          <label for="image">Upload Image:</label>
+          <input type="file" id="image" name="image" accept="image/*" required />
+    
+          <button type="submit">Submit</button>
+        </form>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-section" id="section">
@@ -184,7 +200,9 @@
         725102086 & Đoàn Thị Hoài Thương - 725102089
       </div>
     </footer>
-    <!-- link js -->
+
+    <script src="./Assets/JS/add.js"></script>
     <script src="./Assets/JS/common.js"></script>
+    <script src="./Assets//JS/admin.js"></script>
   </body>
 </html>

@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const isAdmin = localStorage.getItem('IsAdmin') === 'true'; // Kiểm tra xem người dùng có phải admin không
 
     // Nếu người dùng chưa đăng nhập hoặc không phải admin, không cho phép thao tác
-    if (!isLogin || !isAdmin) {
-        alert("Bạn không có quyền truy cập vào các thao tác này!");
-        return; // Dừng thực thi nếu không phải admin
-    }
+    // if (!isLogin || !isAdmin) {
+    //     alert("Bạn không có quyền truy cập vào các thao tác này!");
+    //     return; // Dừng thực thi nếu không phải admin
+    // }
 
     // Lấy danh sách tài khoản từ localStorage
     const accounts = getAccounts();

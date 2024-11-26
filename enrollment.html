@@ -25,18 +25,13 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
     <!-- css -->
-    <link rel="stylesheet" href="./Assets/CSS/enrollment.css">
+    <link rel="stylesheet" href="./Assets/CSS/enrollment.css" />
   </head>
   <body>
     <header>
       <div id="global-header">
         <div class="logo">
-          <img
-            src="./logo.png"
-            alt=""
-            width="80px"
-            height="80px"
-          />
+          <img src="./img/logo.png" alt="" width="80px" height="80px" />
         </div>
         <ul class="navbar">
           <li class="item"><a href="./index.html">TRANG CHỦ</a></li>
@@ -60,19 +55,41 @@
           </li>
           <li class="item"><a href="#">VĂN BẢN</a></li>
           <li class="item"><a href="#">CHƯƠNG TRÌNH ĐÀO TẠO</a></li>
-          <li class="item"><a href="./tuyensinh.html">TUYỂN SINH</a></li>
+          <li class="item">
+            <a href="./enrollment.html">TUYỂN SINH</a>
+            <ul class="subnav">
+              <li class="item">
+                <a href="./tuyensinh.html">Kế hoạch tuyển sinh vào 10</a>
+              </li>
+              <li class="item"><a href="#">Thông báo</a></li>
+            </ul>
+          </li>
           <li class="item"><a href="./news.html">TIN TỨC</a></li>
           <li class="item"><a href="./contact.html">LIÊN HỆ</a></li>
+          <li class="item hidden" id="Manager">
+            <a href="./admin.html">QUẢN LÝ</a>
+          </li>
           <li class="item">
-            <a href="./login.html"><i id="btn-login" class="fa-sharp fa-solid fa-right-to-bracket" onclick="dangnhap()"></i></a>
-            <i id="btn-logout" class="fa-solid fa-right-from-bracket" onclick="dangxuat()"></i>
+            <a href="./login.html"
+              ><i
+                id="btn-login"
+                class="fa-sharp fa-solid fa-right-to-bracket"
+                onclick="dangnhap()"
+              ></i
+            ></a>
+            <i
+              id="btn-logout"
+              class="fa-solid fa-right-from-bracket"
+              onclick="dangxuat()"
+            ></i>
           </li>
         </ul>
       </div>
     </header>
     <div class="container">
       <div class="breadcrumb">
-        <a href="./index.html">APL</a> <span> + </span> <a href="./enrollment.html">Tuyển sinh</a>
+        <a href="./index.html">APL</a> <span> + </span>
+        <a href="./enrollment.html">Tuyển sinh</a>
       </div>
       <div class="content-section">
         <div class="main-content" id="announcement-container"></div>
@@ -97,7 +114,7 @@
     <footer>
       <div class="footer-container">
         <div class="footer-section" id="section">
-          <img src="./Remove-bg.ai_1726541871830.png" alt="Logo" />
+          <img src="./img/logo.png" alt="Logo" />
         </div>
         <div class="footer-section">
           <h3>GIỚI THIỆU</h3>
@@ -166,8 +183,9 @@
         725102086 & Đoàn Thị Hoài Thương - 725102089
       </div>
     </footer>
-   <!-- JS -->
+    <!-- JS -->
     <script src="./Assets/JS/enrollment.js"></script>
     <script src="./Assets//JS/common.js"></script>
+    <script src="./Assets/JS/admin.js"></script>
   </body>
 </html>

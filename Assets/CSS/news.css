@@ -1,0 +1,133 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 100px;
+}
+.information-text {
+  font-size: 14px;
+  margin: 15px 0px;
+}
+.information-text a {
+  text-decoration: none;
+  color: black;
+}
+.information-text span {
+  color: #333;
+}
+.content-section {
+  display: flex;
+  gap: 20px;
+}
+.information-container {
+  flex: 4;
+}
+.sidebar-information {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.data-card {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.data-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.data-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+}
+.data-info h3 {
+  font-size: 18px;
+  margin: 0;
+  color: black;
+}
+.data-info p {
+  font-size: 14px;
+  color: #666;
+}
+.read-more {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+.sidebar-information ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar-information ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sidebar-information ul li a {
+  color: black;
+  text-decoration: none;
+}
+.sidebar-information ul li a:hover {
+  text-decoration: underline;
+}
+.sidebar-information h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.admin-add {
+  font-weight: bold;
+  background-color: #007bb8;
+  color: #fff;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: none;
+}
+
+.admin-add:hover {
+  background-color: #004669;
+}
+
+.btn-delete {
+  position: absolute;
+  bottom: 10px; /* Đặt cách mép dưới của card 10px */
+  right: 10px; /* Đặt cách mép phải của card 10px */
+  padding: 5px 10px; /* Làm cho nút nhỏ hơn */
+  background-color: #d9534f; /* Màu đỏ để báo hiệu nút xóa */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0.8; /* Làm cho nút hơi mờ */
+  transition: opacity 0.3s ease;
+}
+
+.btn-delete:hover {
+  opacity: 1; /* Tăng độ rõ nét khi người dùng di chuột qua */
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar-information {
+    display: none;
+  }
+}
