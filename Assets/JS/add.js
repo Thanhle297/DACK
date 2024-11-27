@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Kiểm tra trạng thái đăng nhập và quyền admin từ localStorage
   const isLogin = localStorage.getItem("IsLogin") === "true";
   const isAdmin = localStorage.getItem("IsAdmin") === "true";
-  const role = localStorage.getItem("role");
+  const isManager = localStorage.getItem("IsManager") ==="true";
 
   // Chỉ hiển thị nút "ADD" nếu người dùng là admin và đã đăng nhập
-  if (isLogin && isAdmin || role !=='manager') {
+  if (isLogin && isAdmin || isManager) {
     const addButton = document.querySelector(".admin-add");
     if (addButton) {
       addButton.style.display = "block";

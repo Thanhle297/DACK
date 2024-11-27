@@ -82,10 +82,15 @@ document.getElementById('login-box').addEventListener('submit', function (event)
 
     localStorage.setItem('IsAdmin',userData.role ==='admin')
     localStorage.setItem('IsLogin', 'true')
+    localStorage.setItem('IsManager',userData.role==='manager')
     localStorage.setItem('currentUser', userData.username) 
     
     if(userData.role ==='admin'){
         alert('Welcome,admin!');
+    }
+
+    if(userData.role === 'manager'){
+        alert('Welcome,manager')
     }
     
     window.location.href = "index.html";

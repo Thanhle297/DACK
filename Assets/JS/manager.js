@@ -270,3 +270,4 @@ function deleteAccount(username) {
         location.reload(); // Tải lại trang để cập nhật
     }
 }
+

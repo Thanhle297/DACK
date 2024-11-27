@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Kiểm tra trạng thái đăng nhập và quyền admin từ localStorage
   const isLogin = localStorage.getItem('IsLogin') === 'true';
   const isAdmin = localStorage.getItem('IsAdmin') === 'true';
-  const role = localStorage.getItem("role");
+  const isManager = localStorage.getItem('IsManager') === 'true';
 
   // Dữ liệu tĩnh có sẵn
   const data = [
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
 
       // Thêm nút xóa cho các bài viết do người dùng thêm nếu đang đăng nhập với quyền admin
-      if (role !=='manager'||isAdmin && index >= data.length) {
+      if (isManager||isAdmin && index >= data.length) {
           const deleteButton = document.createElement('button');
           deleteButton.textContent = 'Xóa Bài Viết';
           deleteButton.classList.add('btn-delete');
