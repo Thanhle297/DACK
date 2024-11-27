@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Kiểm tra trạng thái đăng nhập và quyền admin từ localStorage
   const isLogin = localStorage.getItem('IsLogin') === 'true';
   const isAdmin = localStorage.getItem('IsAdmin') === 'true';
+  const role = localStorage.getItem("role");
 
   // Dữ liệu tĩnh có sẵn
   const data = [
@@ -13,6 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
           description:
               "THÔNG BÁO TUYỂN SINH VÀO LỚP 10 NĂM HỌC 2024 - 2025 TRƯỜNG THPT A PHỦ LÝ",
           link: "./tuyensinh.html",
+      },
+      {
+          imgSrc: "./Assets/Images/thong_bao.png",
+          title:
+              "[THÔNG BÁO] THÔNG BÁO BÁN HỒ SƠ TUYỂN SINH VÀO LỚP 10 NĂM HỌC 2024 - 2025",
+          date: "21 Tháng 5 Năm 2024",
+          description:
+              "TRƯỜNG THPT A PHỦ LÝ THÔNG BÁO BÁN HỒ SƠ TUYỂN SINH VÀO LỚP 10 NĂM HỌC 2024 - 2025",
+          link: "#",
       },
       {
           imgSrc: "./Assets/Images/thong_bao.png",
@@ -51,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
 
       // Thêm nút xóa cho các bài viết do người dùng thêm nếu đang đăng nhập với quyền admin
-      if (isAdmin && index >= data.length) {
+      if (role !=='manager'||isAdmin && index >= data.length) {
           const deleteButton = document.createElement('button');
           deleteButton.textContent = 'Xóa Bài Viết';
           deleteButton.classList.add('btn-delete');

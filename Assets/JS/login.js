@@ -80,12 +80,6 @@ document.getElementById('login-box').addEventListener('submit', function (event)
         return;
     }
 
-    // if (userData.username == 'admin1'){
-    //     localStorage.setItem('IsAdmin', 'true')
-    // }
-    // else{
-    //     localStorage.setItem('IsAdmin', 'false')
-    // }
     localStorage.setItem('IsAdmin',userData.role ==='admin')
     localStorage.setItem('IsLogin', 'true')
     localStorage.setItem('currentUser', userData.username) 

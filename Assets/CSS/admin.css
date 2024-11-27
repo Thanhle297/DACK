@@ -35,12 +35,12 @@ button {
   border-radius: 5px;
 }
 
-.btn-admin {
+.btn-manager {
   background-color: #007bff;
   color: white;
 }
 
-.btn-remove-admin {
+.btn-remove-manager {
   background-color: #f0ad4e;
   color: white;
 }
