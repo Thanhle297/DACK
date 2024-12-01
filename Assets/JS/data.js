@@ -1,65 +1,73 @@
 let product = {
   data: [
     {
-      image:
-        "https://r73troypb4obj.vcdn.cloud/website02/uploads/pictures/62318e151a1b854d4e902242/content_danh-gia-truong-thpt-a-phu-ly-ha-nam-co-tot-khong__3_.jpg",
-      text: "Đánh giá trường THPT A Phủ Lý",
-      subtext: "đây là đánh giá",
+      image: "./img/003.jpg",
+      text: "Lịch sử hình thành trường THPT A Phủ lý",
+      subtext: "Trường THPT A Phủ Lý",
       link: "./lich_su_ra_doi.html",
     },
     {
-      image: "https://phuly.hanamtv.vn/uploads/news/2022_11/1_14.jpg",
+      image: "./img/002.jpg",
       text: "Lễ kỷ niệm 40 năm ngày nhà giáo việt nam và kỷ niệm 25 năm thành lập trường",
       subtext:
         "Kỷ niệm 40 năm ngày nhà giáo Việt Nam (20/11/1982 - 20/11/2022) và 25 năm thành lập trường THPT A Phủ Lý (1997 - 2022)",
+      link: "#",
     },
     {
-      image: "./img/khaigiang.jpg" ,
+      image: "./img/khaigiang.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
+      link: "#",
     },
     {
       image: "./img/khaigiang2.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
+      link: "#",
     },
     {
-      image: "./img/khaigiang3.jpg" ,
+      image: "./img/khaigiang3.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
+      link: "#",
     },
     {
-      image: "./img/khaigiang.jpg" ,
+      image: "./img/khaigiang.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
+      link: "#",
     },
     {
-      image: "./img/khaigiang.jpg" ,
+      image: "./img/khaigiang.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
+      link: "#",
     },
     {
-      image: "./img/khaigiang.jpg" ,
+      image: "./img/khaigiang.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
+      link: "#",
     },
     {
-      image: "./img/khaigiang.jpg" ,
+      image: "./img/khaigiang.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
+      link: "#",
     },
     {
-      image: "./img/khaigiang.jpg" ,
+      image: "./img/khaigiang.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
+      link: "#",
     },
   ],
 };
@@ -97,6 +105,7 @@ for (let i of product.data) {
   document.getElementById("container").appendChild(a);
 }
 
+// slide show
 document.addEventListener("DOMContentLoaded", function () {
   const newsContainer = document.querySelector("#container");
   const prev = document.querySelector(".prev");

@@ -1,23 +1,23 @@
 let neww = {
   data: [
     {
-      img: "https://hes.vnu.edu.vn/images/mau-thong-bao_2204184241_1_2.png",
+      img: "./img/tb.png",
       title: "Thông báo kế hoạch tuyển sinh vào 10 năm học 2024-2025 trường THPT A Phủ Lý",
       date: "18 tháng 05 năm 2024",
       link:"./tuyensinh.html",
     },
     {
-      img: "https://hes.vnu.edu.vn/images/mau-thong-bao_2204184241_1_2.png",
+      img: "./img/tb.png",
       title: "Trường THPT A Phủ Lý thông báo bán hồ sơ tuyển sinh vào lớp 10 năm học 2024-2025",
       date: "08 tháng 10 năm 2024",
     },
     {
-      img: "https://hes.vnu.edu.vn/images/mau-thong-bao_2204184241_1_2.png",
+      img: "./img/tb.png",
       title: "Kế hoạch 1",
       date: "08 tháng 10 năm 2024",
     },
     {
-      img: "https://hes.vnu.edu.vn/images/mau-thong-bao_2204184241_1_2.png",
+      img: "./img/tb.png",
       title: "Kế hoạch 1",
       date: "08 tháng 10 năm 2024",
     },

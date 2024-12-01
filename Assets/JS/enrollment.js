@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const announcements = [
     {
-      imgSrc: "./Assets/Images/thong_bao.png",
+      imgSrc: "./img/tb.png",
       title:
         "[NĂM HỌC 2024 - 2025] KẾ HOẠCH TUYỂN SINH VÀO LỚP 10 TRƯỜNG THPT A PHỦ LÝ",
       date: "18 Tháng 5 Năm 2024",
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "./tuyensinh.html",
     },
     {
-      imgSrc: "./Assets/Images/thong_bao.png",
+      imgSrc: "./img/tb.png",
       title:
         "[THÔNG BÁO] THÔNG BÁO BÁN HỒ SƠ TUYỂN SINH VÀO LỚP 10 NĂM HỌC 2024 - 2025",
       date: "21 Tháng 5 2024",
