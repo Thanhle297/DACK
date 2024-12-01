@@ -4,7 +4,7 @@
 //     const isAdmin = localStorage.getItem('IsAdmin') === 'true'; // Kiểm tra xem người dùng có phải admin không
 
 //     // Nếu người dùng chưa đăng nhập hoặc không phải admin, không cho phép thao tác
-//     // if (!isLogin || !isAdmin) {
+//     // if (!isLogin || !isAdmin || !isManager) {
 //     //     alert("Bạn không có quyền truy cập vào các thao tác này!");
 //     //     return; // Dừng thực thi nếu không phải admin
 //     // }
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lấy danh sách tài khoản từ localStorage
     const accounts = getAccounts();
     const currentUser = localStorage.getItem('currentUser'); // Lấy tài khoản đang đăng nhập
-    const tableBody = document.querySelector('#accountsTable tbody');
+    const tableBody = document.querySelector('#accountsTable tbody'); // lấy theo id bảng để push dữ liệu ra bảng
     tableBody.innerHTML = ''; // Xóa nội dung cũ (nếu có)
 
     accounts.forEach((account, index) => {
@@ -192,8 +192,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Nút xóa tài khoản (Admin có thể xóa tất cả, Manager chỉ có thể xóa tài khoản user)
-        if ((isAdmin && account.username !== 'admin1') || (account.role === 'user' && account.username !== currentUser)) {
-            const btnDelete = document.createElement('button');
+        if ((isAdmin && account.role !== 'admin') || (account.role === 'user' && account.username !== currentUser)) {
+            const btnDelete = document.createElement('button'); 
             btnDelete.textContent = 'Xóa tài khoản';
             btnDelete.classList.add('btn-delete');
             btnDelete.addEventListener('click', () => deleteAccount(account.username));
@@ -213,21 +213,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Lấy danh sách tài khoản từ localStorage
 function getAccounts() {
+    // khởi tạo mảng rỗng để lưu trữ
     const accounts = [];
+    // lặp qua các khóa trong localStorage
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (key !== 'IsAdmin' && key !== 'IsLogin' && key !== 'currentUser') {
+        // loại trừ các khóa không phải là tài khoản
+        if (key !== 'IsAdmin' && key !== 'IsLogin' && key !== 'currentUser' && key !== 'IsManager') {
             try {
+                // lấy dữ liệu người dùng từ local
                 const userData = JSON.parse(localStorage.getItem(key));
+                //kiểm tra tính hợp lệ của dữ liệu ngươi dùng 
                 if (userData && userData.username && userData.password) {
                     accounts.push(userData);
                 }
             } catch (e) {
-                console.error(`Không thể parse dữ liệu từ key: ${key}`);
+                console.error(`Không thể parse dữ liệu từ key: ${key}`); // xử lý khi lỗi parse dữ liệu
             }
         }
     }
-    return accounts;
+    return accounts; // trả về danh sách tài khoản  
 }
 
 // Cấp quyền Manager cho tài khoản (Chỉ admin mới có quyền này)

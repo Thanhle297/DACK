@@ -14,57 +14,49 @@ let product = {
         "Kỷ niệm 40 năm ngày nhà giáo Việt Nam (20/11/1982 - 20/11/2022) và 25 năm thành lập trường THPT A Phủ Lý (1997 - 2022)",
     },
     {
-      image:
-        "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/458602713_1034383191806577_426667522684250421_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG_mTS15flA5GVog30gUpJ_j58Xbz2EUwOPnxdvPYRTA5eenSrgKFKebiPaVFj9aiG1qkSz6kTMqBygg-FV5YFk&_nc_ohc=qZ3fig0eC8YQ7kNvgGIR0J_&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AXIDDJmFIxHGrClWJ55h84K&oh=00_AYAL4pqYnqGbSNKoLNpxK-Z1Nq30clcYWPaTIekpXLpJgw&oe=67326D75",
+      image: "./img/khaigiang.jpg" ,
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
     },
     {
-      image:
-        "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/458602713_1034383191806577_426667522684250421_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG_mTS15flA5GVog30gUpJ_j58Xbz2EUwOPnxdvPYRTA5eenSrgKFKebiPaVFj9aiG1qkSz6kTMqBygg-FV5YFk&_nc_ohc=qZ3fig0eC8YQ7kNvgGIR0J_&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AXIDDJmFIxHGrClWJ55h84K&oh=00_AYAL4pqYnqGbSNKoLNpxK-Z1Nq30clcYWPaTIekpXLpJgw&oe=67326D75",
+      image: "./img/khaigiang2.jpg",
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
     },
     {
-      image:
-        "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/458602713_1034383191806577_426667522684250421_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG_mTS15flA5GVog30gUpJ_j58Xbz2EUwOPnxdvPYRTA5eenSrgKFKebiPaVFj9aiG1qkSz6kTMqBygg-FV5YFk&_nc_ohc=qZ3fig0eC8YQ7kNvgGIR0J_&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AXIDDJmFIxHGrClWJ55h84K&oh=00_AYAL4pqYnqGbSNKoLNpxK-Z1Nq30clcYWPaTIekpXLpJgw&oe=67326D75",
+      image: "./img/khaigiang3.jpg" ,
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
     },
     {
-      image:
-        "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/458602713_1034383191806577_426667522684250421_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG_mTS15flA5GVog30gUpJ_j58Xbz2EUwOPnxdvPYRTA5eenSrgKFKebiPaVFj9aiG1qkSz6kTMqBygg-FV5YFk&_nc_ohc=qZ3fig0eC8YQ7kNvgGIR0J_&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AXIDDJmFIxHGrClWJ55h84K&oh=00_AYAL4pqYnqGbSNKoLNpxK-Z1Nq30clcYWPaTIekpXLpJgw&oe=67326D75",
+      image: "./img/khaigiang.jpg" ,
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
     },
     {
-      image:
-        "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/458602713_1034383191806577_426667522684250421_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG_mTS15flA5GVog30gUpJ_j58Xbz2EUwOPnxdvPYRTA5eenSrgKFKebiPaVFj9aiG1qkSz6kTMqBygg-FV5YFk&_nc_ohc=qZ3fig0eC8YQ7kNvgGIR0J_&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AXIDDJmFIxHGrClWJ55h84K&oh=00_AYAL4pqYnqGbSNKoLNpxK-Z1Nq30clcYWPaTIekpXLpJgw&oe=67326D75",
+      image: "./img/khaigiang.jpg" ,
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
     },
     {
-      image:
-        "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/458602713_1034383191806577_426667522684250421_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG_mTS15flA5GVog30gUpJ_j58Xbz2EUwOPnxdvPYRTA5eenSrgKFKebiPaVFj9aiG1qkSz6kTMqBygg-FV5YFk&_nc_ohc=qZ3fig0eC8YQ7kNvgGIR0J_&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AXIDDJmFIxHGrClWJ55h84K&oh=00_AYAL4pqYnqGbSNKoLNpxK-Z1Nq30clcYWPaTIekpXLpJgw&oe=67326D75",
+      image: "./img/khaigiang.jpg" ,
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
     },
     {
-      image:
-        "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/458602713_1034383191806577_426667522684250421_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG_mTS15flA5GVog30gUpJ_j58Xbz2EUwOPnxdvPYRTA5eenSrgKFKebiPaVFj9aiG1qkSz6kTMqBygg-FV5YFk&_nc_ohc=qZ3fig0eC8YQ7kNvgGIR0J_&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AXIDDJmFIxHGrClWJ55h84K&oh=00_AYAL4pqYnqGbSNKoLNpxK-Z1Nq30clcYWPaTIekpXLpJgw&oe=67326D75",
+      image: "./img/khaigiang.jpg" ,
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
     },
     {
-      image:
-        "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/458602713_1034383191806577_426667522684250421_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG_mTS15flA5GVog30gUpJ_j58Xbz2EUwOPnxdvPYRTA5eenSrgKFKebiPaVFj9aiG1qkSz6kTMqBygg-FV5YFk&_nc_ohc=qZ3fig0eC8YQ7kNvgGIR0J_&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AXIDDJmFIxHGrClWJ55h84K&oh=00_AYAL4pqYnqGbSNKoLNpxK-Z1Nq30clcYWPaTIekpXLpJgw&oe=67326D75",
+      image: "./img/khaigiang.jpg" ,
       text: "NIỀM VUI NGÀY KHAI TRƯỜNG NĂM HỌC 2024-2025",
       subtext:
         "Hoà chung không khí tưng bừng, phấn khởi của Ngày hội toàn dân đưa trẻ tới trường ",
@@ -105,7 +97,7 @@ for (let i of product.data) {
   document.getElementById("container").appendChild(a);
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   const newsContainer = document.querySelector("#container");
   const prev = document.querySelector(".prev");
   const next = document.querySelector(".next");
@@ -114,11 +106,11 @@ document.addEventListener('DOMContentLoaded', function () {
   let changeDimensions = newsContainer.getBoundingClientRect();
   let changeWidth = changeDimensions.width;
 
-  next.addEventListener('click', () => {
+  next.addEventListener("click", () => {
     newsContainer.scrollLeft += changeWidth;
   });
 
-  prev.addEventListener('click', () => {
+  prev.addEventListener("click", () => {
     newsContainer.scrollLeft -= changeWidth;
   });
 });

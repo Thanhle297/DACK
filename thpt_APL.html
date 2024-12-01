@@ -21,14 +21,7 @@
     <header>
       <div id="global-header">
         <div class="logo">
-          <a href="./index.html">
-            <img
-              src="./img/logo.png"
-              alt=""
-              width="80px"
-              height="80px"
-            />
-          </a>
+          <img src="./img/logo.png" alt="" width="80px" height="80px" />
         </div>
         <ul class="navbar">
           <li class="item"><a href="./index.html">TRANG CHỦ</a></li>
@@ -52,17 +45,33 @@
           </li>
           <li class="item"><a href="#">VĂN BẢN</a></li>
           <li class="item"><a href="#">CHƯƠNG TRÌNH ĐÀO TẠO</a></li>
-          <li class="item"><a href="./enrollment.html">TUYỂN SINH</a>
+          <li class="item">
+            <a href="./enrollment.html">TUYỂN SINH</a>
             <ul class="subnav">
-              <li class="item"><a href="./tuyensinh.html">Kế hoạch tuyển sinh vào 10</a></li>
-              <li class="item"><a href="./notificall.html">Thông báo</a></li>
-            </ul>  
+              <li class="item">
+                <a href="./tuyensinh.html">Kế hoạch tuyển sinh vào 10</a>
+              </li>
+              <li class="item"><a href="#">Thông báo</a></li>
+            </ul>
           </li>
           <li class="item"><a href="./news.html">TIN TỨC</a></li>
           <li class="item"><a href="./contact.html">LIÊN HỆ</a></li>
+          <li class="item hidden" id="Manager">
+            <a href="./admin.html">QUẢN LÝ</a>
+          </li>
           <li class="item">
-            <a href="./login.html"><i id="btn-login" class="fa-sharp fa-solid fa-right-to-bracket" onclick="dangnhap()"></i></a>
-            <i id="btn-logout" class="fa-solid fa-right-from-bracket" onclick="dangxuat()"></i>
+            <a href="./login.html"
+              ><i
+                id="btn-login"
+                class="fa-sharp fa-solid fa-right-to-bracket"
+                onclick="dangnhap()"
+              ></i
+            ></a>
+            <i
+              id="btn-logout"
+              class="fa-solid fa-right-from-bracket"
+              onclick="dangxuat()"
+            ></i>
           </li>
         </ul>
       </div>
@@ -258,5 +267,6 @@
       </div>
     </footer>
     <script src="./Assets/JS/common.js"></script>
+    <script src="./Assets/JS/admin.js"></script>
   </body>
 </html>

@@ -9,11 +9,6 @@
   top: 0px;
 }
 
-/* .scrolled {
-  background-color: #1a1a1a;
-  color: white;
-} */
-
 #global-header > .navbar {
   display: flex;
   height: 80px;

@@ -32,7 +32,7 @@
 .data-card {
   position: relative;
   background-color: #fff;
-  padding: 20px;
+  padding: 1%;
   border: 1px solid #ddd;
   margin-bottom: 20px;
   display: flex;
@@ -46,8 +46,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .data-card img {
-  width: 120px;
-  height: 120px;
+  width: 20%;
   border-radius: 5px;
 }
 .data-info h3 {
