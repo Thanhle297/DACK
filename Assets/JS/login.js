@@ -64,7 +64,7 @@ document.getElementById('register-box').addEventListener('submit', function (eve
 })
 
 document.getElementById('login-box').addEventListener('submit', function (event) {
-    event.preventDefault();
+    event.preventDefault(); // preventDefault ngăn chặn hành động mặc định với sự kiện đó.
     let usernameElm = document.querySelector('#us-login').value;
     let passwordElm = document.querySelector('#pw-login').value;
     let user = localStorage.getItem(usernameElm)

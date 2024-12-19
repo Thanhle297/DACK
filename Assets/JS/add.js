@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const isManager = localStorage.getItem("IsManager") ==="true";
 
   // Chỉ hiển thị nút "ADD" nếu người dùng là admin và đã đăng nhập
-  if (isLogin && isAdmin || isManager) {
+  if ((isLogin && isAdmin )|| (isLogin && isManager)) {
     const addButton = document.querySelector(".admin-add");
     if (addButton) {
       addButton.style.display = "block";

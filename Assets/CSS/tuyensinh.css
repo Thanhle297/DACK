@@ -29,6 +29,9 @@ main {
   }
   
   @media (max-width: 768px) {
+    .main{
+      margin: 50px auto;
+    }
     .footer-container {
       flex-direction: column;
       text-align: center;
